@@ -6,7 +6,7 @@ import random
 
 
 async def async_generator():
-    """Yield a random float between 0 and 10 every second"""
+    """Yield a random number between 0 and 10 every second"""
     for i in range(10):
         await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+        yield random.randint(0, 10)
